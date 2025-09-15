@@ -39,7 +39,7 @@ src/main/java/com/amraljundi/stockmonitor/
 ## Development Progress
 
 - [x] Project setup and data models
-- [ ] Virtual threads configuration
+- [x] Virtual threads configuration
 - [ ] API integration with concurrent fetching
 - [ ] Stream processing pipeline
 - [ ] Moving average calculations

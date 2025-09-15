@@ -1,4 +1,4 @@
-package com.amraljundi.stockmonitor.model;
+package com.amraljundi.stockmonitor.controller;
 
 import com.amraljundi.stockmonitor.service.VirtualThreadDemoService;
 import org.springframework.web.bind.annotation.GetMapping;
