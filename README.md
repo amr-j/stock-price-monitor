@@ -11,22 +11,22 @@ A real-time stock price monitoring application built with **Java 24** to experim
 
 ## Tech Stack
 
-- **Java 24** with modern record classes
+- **Java 21** with modern record classes
 - **Spring Boot 3.3.x** for framework foundation
 - **PostgreSQL** for data persistence (will be added later)
 - **WebSocket** for real-time updates
-- **Financial APIs** for live market data
+- **Alpha Vantage API** for live market data
 
 ## Project Structure
 
 ```
 src/main/java/com/amraljundi/stockmonitor/
 ├── model/          # Data models (StockPrice, MovingAverage, Momentum)
-├── service/        # Business logic (API clients, calculators)
-├── streams/        # Stream processing pipelines
+├── client/         # API client (Alpha Vantage)
+├── service/        # Business logic (StockApiService, StockStreamService)
 ├── config/         # Virtual thread configuration
 ├── controller/     # REST endpoints
-└── websocket/      # Real-time WebSocket handlers
+└── exception/      # Custom exceptions
 ```
 
 ## Data Models
@@ -40,8 +40,8 @@ src/main/java/com/amraljundi/stockmonitor/
 
 - [x] Project setup and data models
 - [x] Virtual threads configuration
-- [ ] API integration with concurrent fetching
-- [ ] Stream processing pipeline
+- [x] API integration with concurrent fetching
+- [x] Stream processing pipeline
 - [ ] Moving average calculations
 - [ ] Momentum detection
 - [ ] Database integration
@@ -55,7 +55,7 @@ src/main/java/com/amraljundi/stockmonitor/
 ## Getting Started
 
 1. Clone the repository
-2. Ensure Java 24 is installed
+2. Ensure Java 21 is installed
 3. Run `./mvnw spring-boot:run`
 4. Follow the step-by-step learning modules
 
