@@ -48,7 +48,7 @@ public class StockApiService {
         }
     }
 
-    // TODO - why not fetch in a batch?
+    // Note: Alpha Vantage's free tier doesn't support batch calls
     public List<StockPrice> fetchStocksConcurrently(List<String> symbols) {
 
         List<CompletableFuture<StockPrice>> futures = symbols.stream()
